@@ -1,0 +1,8 @@
+# Eclipse related files
+.classpath
+.project
+.settings/
+bin/
+
+# OS X related file(s)
+.DS_Store
