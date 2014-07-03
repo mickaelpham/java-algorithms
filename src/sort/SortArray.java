@@ -3,7 +3,7 @@ package sort;
 public interface SortArray {
 
 	public enum Implementation {
-		BUBBLESORT, SELECTION
+		BUBBLESORT, SELECTION, INSERTION
 	}
 
 	void setArray(int[] a);
