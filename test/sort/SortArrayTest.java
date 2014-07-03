@@ -42,6 +42,19 @@ public class SortArrayTest {
 		Assert.assertTrue(timeElapsedPerImplementation.get(
 				Implementation.BUBBLESORT) > timeElapsedPerImplementation.get(
 				Implementation.SELECTION));
+		// Test the insertion sort implementation
+		SortArray insertionSort = new InsertionSortArray();
+		insertionSort.setArray(Arrays.copyOf(testArray, testArray.length));
+		start = System.nanoTime();
+		insertionSort.sort();
+		stop = System.nanoTime();
+		timeElapsedPerImplementation.put(insertionSort.getImplementation(),
+				(stop - start));
+		// Compare and make sure insertion sort is better than section sort
+		// for random data
+		Assert.assertTrue(timeElapsedPerImplementation.get(
+				Implementation.SELECTION) > timeElapsedPerImplementation.get(
+				Implementation.INSERTION));
 	}
 
 }
