@@ -1,4 +1,5 @@
-### Java Algorithms
+Java Algorithms
+===============
 
 Just using this repository to keep track of my exercises in Algorithms.
 
@@ -6,7 +7,11 @@ Just using this repository to keep track of my exercises in Algorithms.
 Data Structures
 ---------------
 
-* Arrays
+| Data Structure | Description                            | Usage                              |
+|----------------|----------------------------------------|------------------------------------|
+| Array          | Most common data structure used, ever. | Everywhere, behind the scenes!     |
+| Stack          | Consider it as a conceptual aid.       | Word reversing, bracket delimiters |
+| Queue          |                                        |                                    |
 
 
 Sorting
