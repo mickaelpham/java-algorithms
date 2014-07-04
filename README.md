@@ -12,7 +12,7 @@ Data Structures
 | Array          | Most common data structure used, ever. | Everywhere, behind the scenes!     |
 | Stack          | Consider it as a conceptual aid.       | Word reversing, bracket delimiters |
 | Queue          |                                        |                                    |
-| Circular Queue | Or also named *ring buffer*           |                                    |
+| Circular Queue | Or also named *ring buffer*            |                                    |
 
 
 Sorting
