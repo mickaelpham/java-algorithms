@@ -6,3 +6,6 @@ bin/
 
 # OS X related file(s)
 .DS_Store
+
+# Maven related files
+target/
