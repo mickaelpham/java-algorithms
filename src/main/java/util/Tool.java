@@ -2,6 +2,8 @@ package util;
 
 import java.util.Random;
 
+import stucture.StackChar;
+
 public class Tool {
 
 	private static final int MAX_ASCII_CHARS = 256;
@@ -26,6 +28,19 @@ public class Tool {
 				return false;
 			else
 				charSet[value] = true;
+		}
+		return true;
+	}
+	
+	public static boolean isPermutation(String input, String compareTo) {
+		if (input.length() != compareTo.length())
+			return false;
+		StackChar stack = new StackChar(input.length());
+		for (char c : input.toCharArray())
+			stack.push(c);
+		for (char c : compareTo.toCharArray()) {
+			if (c != stack.pop())
+				return false;
 		}
 		return true;
 	}
