@@ -4,13 +4,29 @@ import java.util.Random;
 
 public class Tool {
 
+	private static final int MAX_ASCII_CHARS = 256;
+
 	public static int[] generateRandomArray(int length, int maxRandom) {
-		if (length <= 0) return null;
+		if (length <= 0)
+			return null;
 		Random rn = new Random();
 		int[] a = new int[length];
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length; i++)
 			a[i] = rn.nextInt(maxRandom);
-		}
 		return a;
+	}
+
+	public static boolean containsUniqueChars(String input) {
+		if (input.length() > MAX_ASCII_CHARS)
+			return false;
+		boolean[] charSet = new boolean[MAX_ASCII_CHARS];
+		for (int i = 0; i < input.length(); i++) {
+			int value = input.charAt(i);
+			if (charSet[value])
+				return false;
+			else
+				charSet[value] = true;
+		}
+		return true;
 	}
 }
