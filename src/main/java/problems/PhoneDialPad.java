@@ -21,14 +21,29 @@ public class PhoneDialPad {
 	private String input;
 
 	private List<String> words;
+	
+	private int numberOfPossibleWords;
 
 	public PhoneDialPad(String userInput) {
 		input = userInput;
-		words = getAllWords();
+		numberOfPossibleWords = -1;
 	}
 
 	public List<String> getWords() {
+		if (words == null)
+			words = getAllWords();
 		return words;
+	}
+	
+	public int getNumberOfPossibleWords() {
+		if (numberOfPossibleWords < 0) {
+			numberOfPossibleWords = 1;
+			for (int i = 0; i < input.length(); i++) {
+				int letterIndex = Integer.valueOf(input.substring(i, i + 1));
+				numberOfPossibleWords *= letters[letterIndex].length();
+			}
+		}
+		return numberOfPossibleWords;
 	}
 
 	private List<String> getAllWords() {
