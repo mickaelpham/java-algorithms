@@ -1,5 +1,8 @@
 package problems;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * You are given a function that can tell you if a String is a valid English
  * word or not. Given a number, corresponding to a dialpad input, write a method
@@ -10,5 +13,42 @@ package problems;
  * Hint: use recursion.
  */
 public class PhoneDialPad {
+
+	// String array used to retrieve number to letters equivalent.
+	private String[] letters = { "0", "1", "ABC", "DEF", "GHI", "JKL", "MNO",
+			"PQRS", "TUV", "WXYZ" };
+
+	private String input;
+
+	private List<String> words;
+
+	public PhoneDialPad(String userInput) {
+		input = userInput;
+		words = getAllWords();
+	}
+
+	public List<String> getWords() {
+		return words;
+	}
+
+	private List<String> getAllWords() {
+		List<String> results = new ArrayList<String>();
+		recursiveExploreLetters("", input, results);
+		return results;
+	}
+
+	private void recursiveExploreLetters(String prefix, String input,
+			List<String> results) {
+		int letterIndex = Integer.valueOf(input.substring(0, 1));
+		for (int i = 0; i < letters[letterIndex].length(); i++) {
+			if (input.length() > 1) {
+				recursiveExploreLetters(
+						prefix + letters[letterIndex].charAt(i),
+						input.substring(1), results);
+			} else {
+				results.add(prefix + letters[letterIndex].charAt(i));
+			}
+		}
+	}
 
 }
