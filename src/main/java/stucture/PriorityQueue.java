@@ -30,16 +30,16 @@ public class PriorityQueue {
 	
 	private int findInsertionIndex(long e) {
 		int i = front;
-		while (i != rear && a[i] < e) {
+		do {
 			if (i == maxSize - 1)
 				i = -1;
 			i++;
-		}
+		} while (i != rear && a[i] <= e);
 		return i;
 	}
 	
 	private void insertAt(int index, long e) {
-		if (index == rear) {
+		if (rear <= maxSize - 1 && index == rear + 1) {
 			if (rear == maxSize - 1)
 				rear = -1;
 			a[++rear] = e;
