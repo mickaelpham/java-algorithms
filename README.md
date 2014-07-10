@@ -7,12 +7,14 @@ Just using this repository to keep track of my exercises in Algorithms.
 Data Structures
 ---------------
 
-| Data Structure | Description                            | Usage                              |
-|----------------|----------------------------------------|------------------------------------|
-| Array          | Most common data structure used, ever. | Everywhere, behind the scenes!     |
-| Stack          | Consider it as a conceptual aid.       | Word reversing, bracket delimiters |
-| Queue          |                                        |                                    |
-| Circular Queue | Or also named *ring buffer*            |                                    |
+| Data Structure | Description                                           | Usage                               |
+|----------------|-------------------------------------------------------|-------------------------------------|
+| Array          | Most common data structure used, ever.                | Everywhere, behind the scenes!      |
+| Stack          | Consider it as a conceptual aid.                      | Word reversing, bracket delimiters. |
+| Queue          | Same, but their variant (priority) is more complex.   |                                     |
+| Circular Queue | Or also named *ring buffer*                           |                                     |
+| Dequeue        | Allow you to `insertRight()` or `insertLeft()`        | Act both like queue or stack.       |
+| Priority Queue | At insertion, items are ordered by key value (lowest) | E.g. in multi-tasking processes.    |
 
 
 Sorting
