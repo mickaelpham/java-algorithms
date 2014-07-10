@@ -26,7 +26,7 @@ public class Queue {
 	}
 	
 	public long remove() {
-		if (nElems == 0) return -1;
+		if (isEmpty()) return -1;
 		long temp = queueArray[front++];
 		// Deal with wrap around.
 		if (front == maxSize)
