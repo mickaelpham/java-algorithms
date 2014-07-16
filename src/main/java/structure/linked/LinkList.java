@@ -1,4 +1,4 @@
-package stucture.linked;
+package structure.linked;
 
 public class LinkList {
 
