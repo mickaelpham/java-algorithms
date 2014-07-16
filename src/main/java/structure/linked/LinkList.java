@@ -43,6 +43,14 @@ public class LinkList {
 		first = first.next;
 		return tmp;
 	}
+	
+	public Link getFirst() {
+		return first;
+	}
+	
+	public Link getLast() {
+		return last;
+	}
 
 	public Link find(int key) {
 		if (isEmpty())

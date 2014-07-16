@@ -17,7 +17,8 @@ public class Queue {
 	}
 	
 	public void insert(long el) {
-		if (isFull()) return;
+		if (isFull())
+			return;
 		// Deal with wrap around (circular queue).
 		if (rear == maxSize - 1)
 			rear = -1;
@@ -26,7 +27,8 @@ public class Queue {
 	}
 	
 	public long remove() {
-		if (isEmpty()) return -1;
+		if (isEmpty())
+			return -1;
 		long temp = queueArray[front++];
 		// Deal with wrap around.
 		if (front == maxSize)
@@ -36,7 +38,8 @@ public class Queue {
 	}
 	
 	public long peek() {
-		if (nElems == 0) return -1;
+		if (nElems == 0)
+			return -1;
 		return queueArray[front];
 	}
 	
