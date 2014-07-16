@@ -24,9 +24,9 @@ Data Structures
 | Ordered Array                 | O(log N) | O(N)      | O(N)     | O(N)      |
 | Linked List                   | O(N)     | O(1)      | O(N)     | -         |
 | Ordered Linked List           | O(N)     | O(N)      | O(N)     | O(N)      |
-| Binary tree (average)         | O(log N) | O(log N)  | O(log N) | O(log N)  |
+| Binary tree (average)         | O(log N) | O(log N)  | O(log N) | O(N)      |
 | Binary tree (worst)           | O(N)     | O(N)      | O(N)     | O(N)      |
-| Binary tree (average + worst) | O(log N) | O(log N)  | O(log N) | O(log N)  |
+| Binary tree (average + worst) | O(log N) | O(log N)  | O(log N) | O(N)      |
 | Hash table                    | O(1)     | O(1)      | O(1)     | -         |
 
 ### Special-Purpose Data Structures
