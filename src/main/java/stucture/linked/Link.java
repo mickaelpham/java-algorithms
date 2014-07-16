@@ -12,6 +12,9 @@ public class Link {
 	public Link(int id, double dd) {
 		iData = id;
 		dData = dd;
+		
+		// Not required but more explicit.
+		next = null;
 	}
 
 	public void displayLink() {
