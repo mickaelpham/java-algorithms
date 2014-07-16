@@ -5,8 +5,12 @@ public class LinkList {
 	// Reference to first link on the list.
 	private Link first;
 
+	// Reference to last link, improve insertion at the end of the list.
+	private Link last;
+
 	public LinkList() {
 		first = null;
+		last = null;
 	}
 
 	public boolean isEmpty() {
@@ -15,8 +19,23 @@ public class LinkList {
 
 	public void insertFirst(int id, double dd) {
 		Link link = new Link(id, dd);
+
+		if (isEmpty())
+			last = link;
+
 		link.next = first;
 		first = link;
+	}
+
+	public void insertLast(int id, double dd) {
+		Link newLink = new Link(id, dd);
+
+		if (isEmpty())
+			first = newLink;
+		else
+			last.next = newLink;
+
+		last = newLink;
 	}
 
 	public Link deleteFirst() {
@@ -38,7 +57,7 @@ public class LinkList {
 		// Reach the end of the list, could not find the key.
 		return null;
 	}
-	
+
 	public Link delete(int key) {
 		if (isEmpty())
 			return null;
