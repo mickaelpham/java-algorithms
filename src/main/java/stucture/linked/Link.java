@@ -2,8 +2,8 @@ package stucture.linked;
 
 public class Link {
 
-	public int iData;
-	public double dData;
+	private int iData;
+	private double dData;
 
 	// Reference to the next link.
 	public Link next;
@@ -19,6 +19,14 @@ public class Link {
 
 	public void displayLink() {
 		System.out.print("{" + iData + ", " + dData + "}");
+	}
+	
+	public int getIData() {
+		return iData;
+	}
+	
+	public double getDData() {
+		return dData;
 	}
 
 }
