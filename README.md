@@ -16,6 +16,31 @@ Data Structures
 | Dequeue        | Allow you to `insertRight()` or `insertLeft()`        | Act both like queue or stack.       |
 | Priority Queue | At insertion, items are ordered by key value (lowest) | E.g. in multi-tasking processes.    |
 
+### General-Purpose Data Strorage Structures
+
+| Data Structure                | Search   | Insertion | Deletion | Traversal |
+|-------------------------------|----------|-----------|----------|-----------|
+| Array                         | O(N)     | O(1)      | O(N)     | -         |
+| Ordered Array                 | O(log N) | O(N)      | O(N)     | O(N)      |
+| Linked List                   | O(N)     | O(1)      | O(N)     | -         |
+| Ordered Linked List           | O(N)     | O(N)      | O(N)     | O(N)      |
+| Binary tree (average)         | O(log N) | O(log N)  | O(log N) | O(log N)  |
+| Binary tree (worst)           | O(N)     | O(N)      | O(N)     | O(N)      |
+| Binary tree (average + worst) | O(log N) | O(log N)  | O(log N) | O(log N)  |
+| Hash table                    | O(1)     | O(1)      | O(1)     | -         |
+
+### Special-Purpose Data Structures
+
+Stacks, queues, and priority queues are Abstract Data Types (ADTs) that are
+implemented by a more fundamental structure such as an array, linked list or (in
+the case of the priority queue) a heap. These ADTs present a simple interface to
+the user, typically allowing only insertion and the ability to access or delete
+only one data item. These items are:
+
+* For stacks: the last item inserted
+* For queues: the first item inserted
+* For priority queue: the item with the highest priority
+
 
 Sorting
 -------
