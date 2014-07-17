@@ -2,6 +2,7 @@ package structure.linked;
 
 public class DLink {
 
+	private long key;
 	private long data;
 	private DLink next;
 	private DLink previous;
@@ -10,6 +11,21 @@ public class DLink {
 		setData(data);
 		setNext(null);
 		setPrevious(null);
+	}
+
+	public DLink(long key, long data) {
+		setKey(key);
+		setData(data);
+		setNext(null);
+		setPrevious(null);
+	}
+
+	public long getKey() {
+		return key;
+	}
+
+	public void setKey(long key) {
+		this.key = key;
 	}
 
 	public long getData() {
