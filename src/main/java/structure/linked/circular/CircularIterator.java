@@ -6,8 +6,8 @@ public class CircularIterator {
 	private CircularList theList;
 
 	public CircularIterator(CircularList list) {
-		setTheList(list);
-		setCurrent(theList.getLastInserted());
+		theList = list;
+		current = list.getLastInserted();
 	}
 
 	public void next() {
@@ -36,16 +36,13 @@ public class CircularIterator {
 		return current;
 	}
 
-	public void setCurrent(Link current) {
-		this.current = current;
-	}
-
-	public CircularList getTheList() {
-		return theList;
-	}
-
-	public void setTheList(CircularList theList) {
-		this.theList = theList;
+	public void setCurrent(int key) throws KeyNotFoundException {
+		Link tmp = current;
+		while (key != current.getKey()) {
+			next();
+			if (current == tmp)
+				throw new KeyNotFoundException();
+		}
 	}
 
 }
