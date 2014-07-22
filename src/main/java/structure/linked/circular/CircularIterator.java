@@ -44,5 +44,10 @@ public class CircularIterator {
 				throw new KeyNotFoundException();
 		}
 	}
+	
+	public void hop(int n) {
+		for (int i = 0; i < n; i++)
+			next();
+	}
 
 }
