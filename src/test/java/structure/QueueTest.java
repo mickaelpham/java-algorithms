@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import stucture.Queue;
+import structure.Queue;
 
 public class QueueTest {
 

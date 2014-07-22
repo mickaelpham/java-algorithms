@@ -1,4 +1,4 @@
-package stucture;
+package structure;
 
 public class PriorityQueue {
 

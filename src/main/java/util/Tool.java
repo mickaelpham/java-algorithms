@@ -2,7 +2,7 @@ package util;
 
 import java.util.Random;
 
-import stucture.StackChar;
+import structure.StackChar;
 
 public class Tool {
 

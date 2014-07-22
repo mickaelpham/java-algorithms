@@ -6,7 +6,7 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-import stucture.PriorityQueue;
+import structure.PriorityQueue;
 
 public class PriorityQueueTest {
 

@@ -3,7 +3,7 @@ package structure;
 import org.junit.Assert;
 import org.junit.Test;
 
-import stucture.BracketChecker;
+import structure.BracketChecker;
 
 public class BracketCheckerTest {
 

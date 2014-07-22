@@ -6,8 +6,8 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-import stucture.Stack;
-import stucture.StackChar;
+import structure.Stack;
+import structure.StackChar;
 
 public class StackTest {
 
