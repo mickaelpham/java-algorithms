@@ -17,4 +17,8 @@ public class TriangularNumber {
 			return n + triangleRecursion(n - 1);
 	}
 
+	public static int triangleMath(int n) {
+		return (int) ((Math.pow(n, 2) + n) / 2);
+	}
+
 }
