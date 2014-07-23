@@ -22,4 +22,11 @@ public class ToolTest {
 		compareTo = "stnafne sel ruojnoc";
 		Assert.assertFalse(Tool.isPermutation(input, compareTo));
 	}
+	
+	@Test
+	public void testJoinStringMethod() {
+		String expected="Id, Name, Contact";
+		String[] input = new String[] { "Id", "Name", "Contact" };
+		Assert.assertEquals(expected, Tool.join(input, ", "));
+	}
 }

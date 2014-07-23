@@ -44,4 +44,14 @@ public class Tool {
 		}
 		return true;
 	}
+	
+	public static String join(String[] a, String separator) {
+		if (a.length == 1)
+			return a[0];
+		StringBuilder sb = new StringBuilder();
+		sb.append(a[0]);
+		for (int i = 1; i < a.length; i++)
+			sb.append(separator + a[i]);
+		return sb.toString();
+	}
 }
