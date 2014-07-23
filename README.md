@@ -71,3 +71,18 @@ could define the triangular numbers mathematically by saying:
 
 Defining something in terms of itself may seem circular, but in fact it's
 perfectly valid, provided there's a **base** case.
+
+### Anagrams
+
+A permutation is an arrangement of things in a definite order. Suppose you want
+to list all the anagrams of a specified word—that is, all possible permutations
+(whether they make a real English word or not) that can be made from the letters
+of the original word. We will call this *anagramming* a word.
+
+You could write a program to anagram a word by following those steps:
+
+1.  Aangram the rightmost `n-1` letters.
+2.  Rotate all `n` letters.
+3.  Repeat these steps `n` times.
+
+
