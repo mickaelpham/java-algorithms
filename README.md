@@ -51,3 +51,14 @@ Sorting
 | Selection Sort | O(N^2)                         | Bubble Sort                           |
 | Insertion Sort | O(N^2)                         | Bubble Sort, Insertion Sort (usually) |
 
+
+Recursion
+---------
+
+Characteristics of Recursive Methods
+
+* It calls itself.
+* When it calls itself, it does so to solve a **smaller** problem.
+* There's some version of the problem that is simple enough that the routine can
+  solve it, and return, without calling itself.
+
