@@ -17,7 +17,7 @@ public class TriangularNumberTest {
 		int[] expecteds = new int[] { 1, 3, 6, 10, 15, 21, 28, 36 };
 		for (int i = 0; i < expecteds.length; i++) {
 			Assert.assertEquals(expecteds[i],
-					TriangularNumber.triangleRecursion(i + 1, 0));
+					TriangularNumber.triangleRecursion(i + 1));
 		}
 	}
 

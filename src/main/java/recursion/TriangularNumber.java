@@ -10,11 +10,11 @@ public class TriangularNumber {
 		return total;
 	}
 
-	public static int triangleRecursion(int n, int total) {
-		if (n > 0)
-			return triangleRecursion(n - 1, total + n);
+	public static int triangleRecursion(int n) {
+		if (n == 1)
+			return 1;
 		else
-			return total;
+			return n + triangleRecursion(n - 1);
 	}
 
 }
