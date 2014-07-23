@@ -62,3 +62,12 @@ Characteristics of Recursive Methods
 * There's some version of the problem that is simple enough that the routine can
   solve it, and return, without calling itself.
 
+Recursion is the progamming equivalent of mathematical induction. Mathematical
+induction is a way of defining something in terms of itself. Using induction, we
+could define the triangular numbers mathematically by saying:
+
+    tri(n) = 1                       if n = 1
+    tri(n) = n + tri(n-1)            if n > 1
+
+Defining something in terms of itself may seem circular, but in fact it's
+perfectly valid, provided there's a **base** case.
