@@ -31,7 +31,7 @@ public class Tool {
 		}
 		return true;
 	}
-	
+
 	public static boolean isPermutation(String input, String compareTo) {
 		if (input.length() != compareTo.length())
 			return false;
@@ -44,7 +44,7 @@ public class Tool {
 		}
 		return true;
 	}
-	
+
 	public static String join(String[] a, String separator) {
 		if (a.length == 1)
 			return a[0];
@@ -54,4 +54,23 @@ public class Tool {
 			sb.append(separator + a[i]);
 		return sb.toString();
 	}
+
+	public static double power(double x, double y) {
+		if (y <= 1)
+			return x;
+		else
+			return power(x*x, y/2);
+	}
+	
+	public static int power(int x, int y) {
+		if (y == 1) {
+			return x;
+		} else {
+			if (y % 2 == 1)
+				return x * power(x*x, y/2);
+			else
+				return power(x*x, y/2);
+		}
+	}
+
 }
