@@ -100,6 +100,8 @@ A heap is a binary tree with these characteristics:
 When a tree is implemented as an array, you can navigate between paths with
 simple arithmetic. If a node is located at *index* then:
 
-| Left child  | *index* x 2 + 1   |
-| Right child | *index* x 2 + 2   |
+| Access to   | Formula           |
+|-------------|-------------------|
+| Left child  | *index* * 2 + 1   |
+| Right child | *index* * 2 + 2   |
 | Parent      | (*index* - 1) / 2 |
