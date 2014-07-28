@@ -86,3 +86,20 @@ You could write a program to anagram a word by following those steps:
 3.  Repeat these steps `n` times.
 
 
+Heaps
+-----
+
+A heap is a binary tree with these characteristics:
+
+*   It's complete. This means it's completely filled in, reading from left to
+    right across each row, although the last row neet not to be full.
+*   It's (usually) implemented as an array.
+*   Each node in a heap satisfies the *heap condition*, which states that
+    every node's key is larger than (or equal to) the keys of its children.
+
+When a tree is implemented as an array, you can navigate between paths with
+simple arithmetic. If a node is located at *index* then:
+
+| Left child  | *index* x 2 + 1   |
+| Right child | *index* x 2 + 2   |
+| Parent      | (*index* - 1) / 2 |
