@@ -105,3 +105,35 @@ simple arithmetic. If a node is located at *index* then:
 | Left child  | *index* * 2 + 1   |
 | Right child | *index* * 2 + 2   |
 | Parent      | (*index* - 1) / 2 |
+
+
+Graphes
+-------
+
+Graphes, unlike trees, often have a shape dictated by a physical or abstract
+problem. For example, nodes in a graph may represent cities, while edges may
+represent airline flight routes between the cities. Another more abstract
+example is a graph representing the individual tasks necessary to complete a
+project. In the graph, nodes may represent tasks, while directed edges (with
+an arrow at one end) indicate which task must be completed before another.
+
+*   Nodes are traditionally called *vertices* (the singular is *vertex*).
+*   **Adjacency**: two vertices are said to be *adjacent* to one another if
+    they are connected by a single *edge*.
+*   A *path* is a sequence of edges.
+*   A graph is said to be *connected* if there is at least one path from
+    every vertex to every other vertex.
+
+
+### The Adjacency Matrix
+
+An adjacency matrix is a two-dimensional array in which the elements indicate
+whether an edge is present between two vertices. If a graph has N vertices,
+the adjacent matrix is an NxN array.
+
+|   | A | B | C | D |
+|---|---|---|---|---|
+| A | 0 | 1 | 1 | 1 |
+| B | 1 | 0 | 0 | 1 |
+| C | 1 | 0 | 0 | 0 |
+| D | 1 | 1 | 0 | 0 |
